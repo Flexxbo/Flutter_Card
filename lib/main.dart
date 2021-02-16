@@ -39,6 +39,16 @@ class MyApp extends StatelessWidget {
                   fontSize: 12.5,
                   letterSpacing: 2,
                 ),
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.account_circle,
+                      size: 50.0,
+                    ),
+                  ],
+                ),
               )
             ],
           ),
