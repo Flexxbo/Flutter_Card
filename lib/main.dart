@@ -1,3 +1,5 @@
+//import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,40 +13,32 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-            child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              height: double.infinity,
-              width: 100.0,
-              color: Colors.red,
-              child: Center(child: Text("1")),
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.yellow,
-                  child: Center(child: Text("1")),
+          child: Column(
+            children: <Widget>[
+              CircleAvatar(
+                backgroundColor: Colors.amber[900],
+                radius: 50.0,
+                child: Image(
+                  height: 80.0,
+                  width: 80.0,
+                  image: AssetImage("images/HundeFoto.png"),
                 ),
-                Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.green,
-                  child: Center(child: Text("1")),
-                ),
-              ],
-            ),
-            Container(
-              height: double.infinity,
-              width: 100.0,
-              color: Colors.blue,
-              child: Center(child: Text("1")),
-            ),
-          ],
-        )),
+              ),
+              Text(
+                "Kommissar Rex",
+                style: TextStyle(
+                    fontSize: 25.0,
+                    color: Colors.amber,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "ReggaeOne"),
+              ),
+              Text(
+                "Hauptkommissar Hundestaffel",
+                style: TextStyle(color: Colors.white),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
