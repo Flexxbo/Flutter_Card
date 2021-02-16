@@ -1,5 +1,6 @@
 //import 'dart:html';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -41,12 +42,38 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
+                color: Colors.white,
+                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 5.0),
+                padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
                 child: Row(
                   children: <Widget>[
                     Icon(
                       Icons.account_circle,
-                      size: 50.0,
+                      size: 30.0,
+                      color: Colors.teal[800],
                     ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Text("Herrchen: Waldemar Waldowski")
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 10.0),
+                padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      size: 30.0,
+                      color: Colors.teal[800],
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Text("Snoop@dogmail.com")
                   ],
                 ),
               )
