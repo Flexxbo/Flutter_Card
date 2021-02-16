@@ -17,24 +17,28 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 backgroundColor: Colors.amber[900],
-                radius: 50.0,
+                radius: 70.0,
                 child: Image(
-                  height: 80.0,
-                  width: 80.0,
+                  height: 100.0,
+                  width: 100.0,
                   image: AssetImage("images/HundeFoto.png"),
                 ),
               ),
               Text(
                 "Kommissar Rex",
                 style: TextStyle(
-                    fontSize: 25.0,
+                    fontSize: 30.0,
                     color: Colors.amber,
                     fontWeight: FontWeight.bold,
                     fontFamily: "ReggaeOne"),
               ),
               Text(
-                "Hauptkommissar Hundestaffel",
-                style: TextStyle(color: Colors.white),
+                "HAUPTKOMMISSAR HUNDESTAFFEL",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 12.5,
+                  letterSpacing: 2,
+                ),
               )
             ],
           ),
