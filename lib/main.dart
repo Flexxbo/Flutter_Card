@@ -41,23 +41,21 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 5.0),
-                padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.account_circle,
-                      size: 30.0,
-                      color: Colors.teal[800],
-                    ),
-                    SizedBox(
-                      width: 15.0,
-                    ),
-                    Text("Herrchen: Waldemar Waldowski")
-                  ],
-                ),
+                //padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
+                child: Padding(
+                    padding:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.account_circle,
+                        size: 30.0,
+                        color: Colors.teal[800],
+                      ),
+                      title: Text("Herrchen: Waldemar Waldowski"),
+                    )),
               ),
               Container(
                 color: Colors.white,
@@ -84,3 +82,17 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+/*
+Row(
+children: <Widget>[
+Icon(
+Icons.account_circle,
+size: 30.0,
+color: Colors.teal[800],
+),
+SizedBox(
+width: 15.0,
+),
+Text("Herrchen: Waldemar Waldowski")
+],
+),*/
